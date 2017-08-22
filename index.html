@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game of Thrones Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+    <header id="title">
+        <h1>Game of Thrones Quiz</h1>
+    </header>
+    <div id="container">
+        <section id="startPage">
+            <h2>Winter is here!</h2>
+            <button type="submit" id="startQuiz">Start Quiz</button>
+        </section>
+        <section id="questionPage">
+            <form action="form" class="myForm">
+                <h2>Question</h2>
+                <input type="radio" name="option" value="0"><label id="opt1">text</label><br>
+                <input type="radio" name="option" value="1"><label id="opt2">text</label><br>
+                <input type="radio" name="option" value="2"><label id="opt3">text</label><br>
+                <input type="radio" name="option" value="3"><label id="opt4">text</label><br>
+                <button type="submit" id="nextQuestion">Next</button>
+                <p><span id="questionNo">5</span> out of <span id="outOf">10</span></p>
+            </form>
+        </section>
+        <section id="showAnswer">
+            <h2>Correct</h2>
+            <button type="submit" id="continue">Continue Quiz</button>
+        </section>
+        <section id="finalPage">
+            <h2>Your Result</h2>
+            <p>You got <span id="correctNo">5</span> out of <span id="total-outof">10</span> correct</p>
+            <button type="submit" id="retake">Retake Quiz</button>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
